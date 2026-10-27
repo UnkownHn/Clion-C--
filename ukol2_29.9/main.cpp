@@ -1,0 +1,66 @@
+/*Úloha č. 1
+Vytvořte třídu číslo. Tato třída bude obsahovat jednu privátní proměnnou, která bude obsahovat hodnotu tohoto čísla. Dále do třídy přidejte veřejné metody pro nastavení hodnoty tohoto čísla a zobrazení hodnoty tohoto čísla. V hlavní funkci programu vytvořte jednu instanci, nastavte hodnotu tohoto čísla a poté na obrazovku zobrazte hodnotu tohoto čísla zavoláním metody vytvořené instance. Pro vstupy a výstupy použijte datové proudy.
+
+Úloha č. 2
+Vytvořte třídu zlomek. Tato třída bude obsahovat dvě privátní proměnné - čitatel a jmenovatel. Dále do třídy přidejte veřejné metody pro nastavení hodnot čitatele i jmenovatele a také metody pro zobrazení hodnot těchto čísel. Také přidejte metodu pro výpočet hodnoty tohoto zlomku - ošetřete, aby se nikdy nemohlo dělit nulou. V hlavní funkci programu vytvořte jednu instanci, nastavte čitatele a jmenovatele a poté na obrazovku zobrazte hodnotu tohoto zlomku. Pro vstupy a výstupy použijte datové proudy.
+*/
+
+#include <iostream>
+using namespace std;
+
+class Zlomek {
+private:
+    int citatel;
+    int jmenovatel;
+
+public:
+    void nastavCitatel(int x) {
+        citatel = x;
+    }
+
+    void nastavJmenovatel(int x) {
+        if (x != 0) {
+            jmenovatel = x;
+        }
+    }
+
+    void zobrazCitatel() {
+        cout << citatel << endl;
+    }
+
+    void zobrazJmenovatel() {
+        cout << jmenovatel << endl;
+    }
+
+    double vypocet() {
+        if (jmenovatel != 0) {
+            return (double)citatel / jmenovatel;
+        }
+        return 0;
+    }
+};
+
+int main() {
+    Zlomek zlomek;
+    int a, b;
+
+    cout << "Zadej citatel: ";
+    cin >> a;
+
+    cout << "Zadej jmenovatel: ";
+    cin >> b;
+
+    zlomek.nastavCitatel(a);
+    zlomek.nastavJmenovatel(b);
+
+    cout << "Citatel: ";
+    zlomek.zobrazCitatel();
+
+    cout << "Jmenovatel: ";
+    zlomek.zobrazJmenovatel();
+
+    cout << "Hodnota zlomku: ";
+    cout << zlomek.vypocet() << endl;
+
+    return 0;
+}
