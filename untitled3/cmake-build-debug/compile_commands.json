@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/h_vastakova/CLionProjects/untitled3/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\C__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -fmodules-ts -fmodule-mapper=CMakeFiles\\untitled3.dir\\main.cpp.obj.modmap -MD -fdeps-format=p1689r5 -x c++ -o CMakeFiles\\untitled3.dir\\main.cpp.obj -c C:\\Users\\h_vastakova\\CLionProjects\\untitled3\\main.cpp",
+  "file": "C:/Users/h_vastakova/CLionProjects/untitled3/main.cpp",
+  "output": "C:/Users/h_vastakova/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/untitled3.dir/main.cpp.obj"
+}
+]
