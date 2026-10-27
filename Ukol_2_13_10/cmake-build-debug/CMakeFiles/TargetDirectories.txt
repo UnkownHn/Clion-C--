@@ -1,0 +1,3 @@
+C:/Users/h_vastakova/CLionProjects/Ukol_2_13_10/cmake-build-debug/CMakeFiles/Ukol_2_13_10.dir
+C:/Users/h_vastakova/CLionProjects/Ukol_2_13_10/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/h_vastakova/CLionProjects/Ukol_2_13_10/cmake-build-debug/CMakeFiles/rebuild_cache.dir
